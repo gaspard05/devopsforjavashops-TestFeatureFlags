@@ -21,6 +21,6 @@ public class HelloController {
     @GetMapping("/welcome")
     public String mainWithParam(Model model) {
         model.addAttribute("Beta", featureManager.isEnabledAsync("featureManagement.Beta").block());
-        return "welcome";
+        return "Welcome To Azure DevOps for Java Developers!";
     }
 }
